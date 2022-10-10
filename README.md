@@ -1,6 +1,6 @@
-# laliga-data
+# World_cup_data
 
-Scraping data from spanish football [La Liga](https://laliga.com/) website.
+Dataset acquired from Kaggle (https://www.kaggle.com/datasets/brenda89/fifa-world-cup-2022)
 
 ![LaLiga Logo](laliga-logo.png)
 
