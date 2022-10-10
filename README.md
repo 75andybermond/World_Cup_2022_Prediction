@@ -5,6 +5,7 @@ Dataset acquired from Kaggle (https://www.kaggle.com/datasets/brenda89/fifa-worl
 
 ![logo](https://github.com/75andybermond/World_Cup_2022_Prediction/edit/main/dataset-cover.png)
 
+![Screenshot](dataset-cover.png)
 
 This is a tool entirely written in Python. This is an end to end project that can can be improved a lot. It reprent at this moment a work of 2 weeks. 
 
