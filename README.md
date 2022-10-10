@@ -2,9 +2,9 @@
 
 Dataset acquired from Kaggle (https://www.kaggle.com/datasets/brenda89/fifa-world-cup-2022)
 
-![LaLiga Logo](laliga-logo.png)
+![Logo](dataset-cover.png)
 
-This is a tool entirely written in Python that allows to **scrap all player data available in the official website of the spanish football league** for the current season. At the time of writing, three competitions are available: female first division, male first division and male second division.
+This is a tool entirely written in Python. This is an end to end project that can can be improved a lot. It reprent at this moment a work of 2 weeks. 
 
 ## Setup
 
@@ -17,31 +17,6 @@ $ pip install -r requirements.txt
 ```
 
 Optionally, you can create a `.env` file in the working directory to overwrite settings from [settings.py](settings.py).
-
-### Other requirements
-
-There are few external requirements for the project to work properly:
-
-- [geckodriver](https://github.com/mozilla/geckodriver/releases)
-- [Firefox Browser](https://www.mozilla.org/firefox/download/)
-
-## Usage
-
-```console
-$ python main.py --help
-Usage: main.py [OPTIONS]
-
-Options:
-  -v, --verbose              Loglevel increased to debug.
-  -n, --num_players INTEGER  Num players (per competition) to be scraped. If
-                             0, all available players will be retrieved.
-                             [default: 0]
-  --help                     Show this message and exit.
-```
-
-A common usage would be just `python main.py -v`. It takes aproximately 2 hours to finish execution (depending on the network issues).
-
-Once finished, a **csv file** will be present in repo containing all scraped data from players.
 
 ## Data
 
