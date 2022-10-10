@@ -3,9 +3,10 @@
 Dataset acquired from Kaggle (https://www.kaggle.com/datasets/brenda89/fifa-world-cup-2022)
 
 
-![logo](https://github.com/75andybermond/World_Cup_2022_Prediction/edit/main/dataset-cover.png)
 
-![Screenshot](dataset-cover.png)
+
+![dataset-cover](https://user-images.githubusercontent.com/107470329/194936103-16bbc044-9992-43c6-aa66-ef95a80411e2.jpg)
+
 
 This is a tool entirely written in Python. This is an end to end project that can can be improved a lot. It reprent at this moment a work of 2 weeks. 
 
