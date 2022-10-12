@@ -1,0 +1,50 @@
+if "ds" not in st.session_state:
+        st.session_state.df = pd.DataFrame(columns=["Home_team", 
+                                                "Away_team", 
+                                                "Home_team_result"])
+
+st.subheader("Add matchs")
+
+num_new_rows = st.sidebar.number_input("Add Rows",1,50)
+ncol = st.session_state.df.shape[1]  # col count
+rw = -1
+
+with st.form(key="add form", clear_on_submit= True):
+    cols = st.columns(ncol)
+    rwdta = []
+    
+    for i in range(ncol):
+        rwdta.append(cols[i].text_input(st.session_state.df.columns[i]))
+    
+
+    if st.form_submit_button("Add"):
+        if st.session_state.df.shape[0] == num_new_rows:
+            st.error("Add row limit reached. Cant add any more records..")
+
+        else:
+            rw = st.session_state.df.shape[0] + 1
+            st.info(f"Row: {rw} / {num_new_rows} added")
+            st.session_state.df.loc[rw] = rwdta
+
+            if st.session_state.df.shape[0] == num_new_rows:
+                st.error("Add row limit reached...")
+            
+            
+st.dataframe(st.session_state.df)
+
+
+
+
+
+# Create an empty dataframe
+data = pd.DataFrame(columns=["Home_team", "Away_team", "Home_team_result"])
+st.text("Original dataframe")
+
+if st.button("Append teams and result"):
+    # update dataframe state
+    st.session_state.data = st.session_state.df.append({'Home_team':home_team_alpha, 'Away_team':away_team_alpha }, ignore_index=True)
+    st.text("Updated dataframe")
+    st.dataframe(st.session_state.df)
+
+ #still empty as state is not persisted
+st.dataframe(st.session_state.df)
